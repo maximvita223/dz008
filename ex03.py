@@ -11,7 +11,6 @@ class Cell:
         else:
             print('Отрицательно!')
 
-
     def __mul__(self, other):
         return Cell(self.quantity * other.quantity)
 
@@ -20,6 +19,7 @@ class Cell:
 
     def __str__(self):
         return f'Результат операции {self.quantity * "*"} - {self.quantity} ячеек'
+
 
 cells1 = Cell(33)
 cells2 = Cell(9)

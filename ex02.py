@@ -21,6 +21,7 @@ class CoatJacket(Clothes):
         super().__init__(width, height)
         self.square_c = round(self.width / 6.5 + 0.5, 2)
         self.square_j = round(self.height * 2 + 0.3, 2)
+
     def __str__(self):
         return f'Площадь на пальто {self.square_c} \n' f'Площадь на костюм {self.square_j}'
 

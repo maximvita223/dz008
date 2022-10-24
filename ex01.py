@@ -1,5 +1,6 @@
 import copy
 
+
 class Matrix:
     def __init__(self, matrix):
         self.matrix = matrix
@@ -7,7 +8,7 @@ class Matrix:
     def __str__(self):
         roster = ''
         for i in self.matrix:
-            roster = roster + '\t'.join(map(str,i)) + '\n'
+            roster = roster + '\t'.join(map(str, i)) + '\n'
         return roster
 
     def __add__(self, other):
@@ -18,6 +19,6 @@ class Matrix:
         return Matrix(res)
 
 
-lst_1 = [[1,2,4],[3,4,5],[5,6,6]]
-lst_2 = [[11,21,41],[31,41,51],[51,61,61]]
+lst_1 = [[1, 2, 4], [3, 4, 5], [5, 6, 6]]
+lst_2 = [[11, 21, 41], [31, 41, 51], [51, 61, 61]]
 print(Matrix(lst_1)+Matrix(lst_2))
